@@ -15,7 +15,6 @@ The Wordle Game project is a Java-based GUI application that replicates the popu
 To set up the Wordle Game on your local system, follow these steps:
 
 ```bash
-Copy code
 git clone https://github.com/SamiMelhem/Wordle-Game.git
 cd Wordle-Game
 ./gradlew build
@@ -24,7 +23,6 @@ cd Wordle-Game
 Run the Wordle game using the following command:
 
 ```bash
-Copy code
 ./gradlew run
 ```
 ## File Descriptions
