@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.GridPane?>
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wordlegame.StatsManager" style="-fx-background-color: white; -fx-padding: 20;">
+    <Label text="Congratulations!" style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: black; -fx-font-family: Impact;"/>
+    <HBox>
+        <Label text="STATISTICS" style="-fx-font-weight: bold; -fx-text-fill: black;"/>
+    </HBox>
+    <GridPane hgap="10" vgap="10" alignment="CENTER">
+        <Label fx:id="games_played" text="47" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+        <Label text="Played" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-text-fill: black;"/>
+
+        <Label fx:id="win_percent" text="100" GridPane.rowIndex="0" GridPane.columnIndex="1" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+        <Label text="Win %" GridPane.rowIndex="1" GridPane.columnIndex="1" style="-fx-text-fill: black;"/>
+
+        <Label fx:id="num_current_streak" text="1" GridPane.rowIndex="0" GridPane.columnIndex="2" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+        <Label text="Current Streak" GridPane.rowIndex="1" GridPane.columnIndex="2" style="-fx-text-fill: black;"/>
+
+        <Label fx:id="num_max_streak" text="20" GridPane.rowIndex="0" GridPane.columnIndex="3" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+        <Label text="Max Streak" GridPane.rowIndex="1" GridPane.columnIndex="3" style="-fx-text-fill: black;"/>
+    </GridPane>
+    <HBox alignment="CENTER_LEFT">
+        <Label text="GUESS DISTRIBUTION" style="-fx-font-weight: bold; -fx-text-fill: black;"/>
+    </HBox>
+    <VBox spacing="5">
+        <!-- Progress bars for guess distribution -->
+        <HBox spacing="10">
+            <Label text="1" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+            <ProgressBar fx:id="one_wins_progress_bar" progress="0.0" style="-fx-accent: grey;"/>
+            <Label fx:id="one_wins" text="0" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+        </HBox>
+        <HBox spacing="10">
+            <Label text="2" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+            <ProgressBar fx:id="two_wins_progress_bar" progress="0.2" style="-fx-accent: grey;"/>
+            <Label fx:id="two_wins" text="2" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+        </HBox>
+        <HBox spacing="10">
+            <Label text="3" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+            <ProgressBar fx:id="three_wins_progress_bar" progress="0.9" style="-fx-accent: grey;"/>
+            <Label fx:id="three_wins" text="9" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+        </HBox>
+        <HBox spacing="10">
+            <Label text="4" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+            <ProgressBar fx:id="four_wins_progress_bar" progress="0.85" style="-fx-accent: grey;"/>
+            <Label fx:id="four_wins" text="17" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+        </HBox>
+        <HBox spacing="10">
+            <Label text="5" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+            <ProgressBar fx:id="five_wins_progress_bar" progress="0.75" style="-fx-accent: grey;"/>
+            <Label fx:id="five_wins" text="15" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+        </HBox>
+        <HBox spacing="10">
+            <Label text="6" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+            <ProgressBar fx:id="six_wins_progress_bar" progress="0.2" style="-fx-accent: grey;"/>
+            <Label fx:id="six_wins" text="4" style="-fx-text-fill: black; -fx-font-weight: bold;"/>
+        </HBox>
+    </VBox>
+
+    <Separator style="-fx-padding: 0 0 5 0;"/>
+</VBox>

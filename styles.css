@@ -1,0 +1,135 @@
+.keyboard-button {
+    -fx-background-color: lightgrey;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2;
+    -fx-alignment: center;
+    -fx-font-family: 'Geneva';
+}
+
+.green-keyboard-button {
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2;
+    -fx-alignment: center;
+    -fx-font-family: 'Geneva';
+}
+
+.yellow-keyboard-button {
+    -fx-background-color: yellow;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2;
+    -fx-alignment: center;
+    -fx-font-family: 'Geneva';
+}
+
+.grey-keyboard-button {
+    -fx-background-color: lightgrey;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2;
+    -fx-alignment: center;
+    -fx-font-family: 'Geneva';
+}
+
+.wordle-cell {
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: lightgrey;
+    -fx-border-width: 2;
+    -fx-font-family: 'Geneva';
+}
+
+.update-wordle-cell {
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Geneva';
+}
+
+.green-wordle-cell {
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+    -fx-background-color: green;
+    -fx-text-fill: white;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Geneva';
+}
+
+.yellow-wordle-cell {
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+    -fx-background-color: yellow;
+    -fx-text-fill: white;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Geneva';
+}
+
+.grey-wordle-cell {
+    -fx-alignment: center;
+    -fx-font-size: 20px;
+    -fx-background-color: lightgrey;
+    -fx-text-fill: white;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Geneva';
+}
+
+.wordle-title {
+    -fx-font-size: 30px;
+    -fx-text-fill: #333;
+    -fx-font-family: "Impact";
+    -fx-alignment: center;
+}
+
+.reset-icon {
+    -fx-background-color: white;
+    -fx-alignment: center;
+}
+
+.load-icon {
+    -fx-background-color: white;
+    -fx-alignment: center;
+}
+.save-icon {
+    -fx-background-color: white;
+    -fx-alignment: center;
+}
+.stats-icon {
+    -fx-background-color: white;
+    -fx-alignment: center;
+}
+
+.delete-button {
+    -fx-background-color: lightgrey;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2;
+    -fx-alignment: center;
+}
+.enter-button {
+    -fx-background-color: lightgrey;
+    -fx-border-color: darkgrey;
+    -fx-border-width: 2;
+    -fx-alignment: center;
+}

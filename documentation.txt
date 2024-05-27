@@ -1,0 +1,19 @@
+Wordle Project Documentation - Sami Melhem
+
+- Application Objects Structure
+    - MainApp (Runner)
+    - GameBoard (Logs moves via loadGame(), saved_games.txt)
+    - CurrentWord (Shadow Data Structure: LinkedList<Character> >> 2D Array)
+    - WordSelector (IO, wordList.txt)
+    - StatsManager (IO, finished_games.txt)
+- GUI Application Working (Complete a Game and Show Features)
+    - Attractive Pages
+        - Main page
+        - Stats page (showing the page before a completed game)
+    - Letters of the keyboard
+    - Enter and Delete Buttons
+    - Save current game
+    - Reset game
+    - Load a game
+    - Complete game
+    - Stats Page (showing the page changes after the completed game)

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<VBox alignment="CENTER" spacing="10" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wordlegame.GameBoard" style="-fx-background-color: white" stylesheets="@styles.css">
+    <HBox alignment="CENTER" spacing="23">
+        <!-- Reset Game Button -->
+        <Button fx:id="resetGameButton" onAction="#handleResetGame" styleClass="reset-icon">
+            <graphic>
+                <ImageView fitWidth="30" fitHeight="30">
+                    <image>
+                        <Image url="@refresh-arrow.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Region HBox.hgrow="ALWAYS" />
+
+        <!-- Title -->
+        <Label text="Wordle" styleClass="wordle-title"/>
+
+        <!-- HBox for the right-aligned buttons -->
+        <HBox>
+            <!-- Load Game Button -->
+            <Button fx:id="loadGameButton" onAction="#handleLoadGame" styleClass="load-icon">
+                <graphic>
+                    <ImageView fitWidth="30" fitHeight="30">
+                        <image>
+                            <Image url="@load_button.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <!-- Save Game Button -->
+            <Button fx:id="saveGameButton" onAction="#handleSaveGame" styleClass="save-icon">
+                <graphic>
+                    <ImageView fitWidth="30" fitHeight="30">
+                        <image>
+                            <Image url="@save_button.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <!-- Stats Button -->
+            <Button fx:id="statsButton" onAction="#handleShowStats" styleClass="stats-icon">
+                <graphic>
+                    <ImageView fitWidth="30" fitHeight="30">
+                        <image>
+                            <Image url="@network-bars.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+    </HBox>
+    <Separator style="-fx-padding: 0 0 5 0;"/>
+
+    <!-- 6x5 grid -->
+    <GridPane fx:id="wordleGrid" hgap="5" vgap="5" alignment="CENTER">
+        <TextField fx:id="cell00" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="cell01" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <TextField fx:id="cell02" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+        <TextField fx:id="cell03" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+        <TextField fx:id="cell04" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="0" GridPane.columnIndex="4"/>
+
+        <TextField fx:id="cell05" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="cell06" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <TextField fx:id="cell07" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+        <TextField fx:id="cell08" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="1" GridPane.columnIndex="3"/>
+        <TextField fx:id="cell09" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="1" GridPane.columnIndex="4"/>
+
+        <TextField fx:id="cell10" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="cell11" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <TextField fx:id="cell12" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+        <TextField fx:id="cell13" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="2" GridPane.columnIndex="3"/>
+        <TextField fx:id="cell14" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="2" GridPane.columnIndex="4"/>
+
+        <TextField fx:id="cell15" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="cell16" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        <TextField fx:id="cell17" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+        <TextField fx:id="cell18" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="3" GridPane.columnIndex="3"/>
+        <TextField fx:id="cell19" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="3" GridPane.columnIndex="4"/>
+
+        <TextField fx:id="cell20" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <TextField fx:id="cell21" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+        <TextField fx:id="cell22" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+        <TextField fx:id="cell23" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="4" GridPane.columnIndex="3"/>
+        <TextField fx:id="cell24" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="4" GridPane.columnIndex="4"/>
+
+        <TextField fx:id="cell25" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <TextField fx:id="cell26" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+        <TextField fx:id="cell27" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+        <TextField fx:id="cell28" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="5" GridPane.columnIndex="3"/>
+        <TextField fx:id="cell29" prefWidth="60" prefHeight="60" editable="false"
+                   styleClass="wordle-cell" GridPane.rowIndex="5" GridPane.columnIndex="4"/>
+    </GridPane>
+
+    <VBox fx:id="keyboard" spacing="5">
+        <HBox fx:id="row1" spacing="3" alignment="CENTER" >
+            <!-- First row of keyboard buttons (Q to P) -->
+            <Button text="Q" onAction="#handleKey" minWidth="37" styleClass="keyboard-button"/>
+            <Button text="W" onAction="#handleKey" minWidth="37" styleClass="keyboard-button"/>
+            <Button text="E" onAction="#handleKey" minWidth="37" styleClass="keyboard-button"/>
+            <Button text="R" onAction="#handleKey" minWidth="37" styleClass="keyboard-button"/>
+            <Button text="T" onAction="#handleKey" minWidth="37" styleClass="keyboard-button"/>
+            <Button text="Y" onAction="#handleKey" minWidth="37" styleClass="keyboard-button"/>
+            <Button text="U" onAction="#handleKey" minWidth="37" styleClass="keyboard-button"/>
+            <Button text="I" onAction="#handleKey" minWidth="37" styleClass="keyboard-button"/>
+            <Button text="O" onAction="#handleKey" minWidth="37" styleClass="keyboard-button"/>
+            <Button text="P" onAction="#handleKey" minWidth="37" styleClass="keyboard-button"/>
+        </HBox>
+        <HBox fx:id="row2" spacing="3" alignment="CENTER">
+            <!-- Second row of keyboard buttons (A to L) -->
+            <Button text="A" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="S" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="D" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="F" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="G" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="H" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="J" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="K" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="L" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+        </HBox>
+        <HBox fx:id="row3" spacing="3" alignment="CENTER">
+            <!-- Third row of keyboard buttons (Z to M) with Enter and Delete Keys -->
+            <Button onAction="#handleEnter" minWidth="40" styleClass="enter-button">
+                <graphic>
+                    <ImageView fitWidth="27" fitHeight="27">
+                        <image>
+                            <Image url="@enter-button.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button text="Z" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="X" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="C" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="V" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="B" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="N" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button text="M" onAction="#handleKey" minWidth="40" styleClass="keyboard-button"/>
+            <Button onAction="#handleDelete" minWidth="40" styleClass="delete-button">
+                <graphic>
+                    <ImageView fitWidth="27" fitHeight="27">
+                        <image>
+                            <Image url="@delete-button.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+    </VBox>
+</VBox>

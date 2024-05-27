@@ -1,0 +1,10 @@
+CROCK
+THINK                              
+grey grey grey grey green default default default default default default default default default default default default default default default default default default default default default default default default default 
+Q-default W-default E-default R-default T-grey Y-default U-default I-grey O-default P-default A-default S-default D-default F-default G-default H-grey J-default K-green L-default Enter-default Z-default X-default C-default V-default B-default N-grey M-default Delete-default 
+1
+HAUNT
+SPACE                              
+grey grey yellow grey grey default default default default default default default default default default default default default default default default default default default default default default default default default 
+Q-default W-default E-grey R-default T-default Y-default U-default I-default O-default P-grey A-yellow S-grey D-default F-default G-default H-default J-default K-default L-default Enter-default Z-default X-default C-grey V-default B-default N-default M-default Delete-default 
+1
